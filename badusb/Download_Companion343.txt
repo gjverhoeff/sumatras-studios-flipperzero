@@ -1,4 +1,3 @@
-REM Author: Sumatras Studios
 REM Description: Downloads Bitfocus Companion 3.4.3 .exe file from the URL and runs it on pc.
 REM Version: 1.0
 REM Category: Execution
