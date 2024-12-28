@@ -1,0 +1,19 @@
+REM Author: Sumatras Studios
+REM Description: Downloads Bitfocus Companion 3.4.3 .exe file from the URL and runs it on pc.
+REM Version: 1.0
+REM Category: Execution
+DELAY 750
+DELAY 950
+WINDOWS r
+DELAY 650
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 750
+LEFTARROW
+ENTER
+DELAY 850
+ALT y
+DELAY 1200
+STRING $url = "https://s3.bitfocus.io/builds/companion/companion-win64-3.4.3+7347-stable-23764ac2.exe"; $output = "C:\temp\companion-win64-3.4.3+7347-stable-23764ac2.exe"; Invoke-WebRequest -Uri $url -OutFile $output; Start-Process -FilePath "C:\temp\companion-win64-3.4.3+7347-stable-23764ac2.exe"; exit
+ENTER
+
